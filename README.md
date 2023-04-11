@@ -25,14 +25,14 @@
 
 ### Movie Review Images:
 <p>
-    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub1.png" width="500px" height="300px"/>
-    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub2.png" width="500px" height="300px"/>
+    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub1.png" width="400px" height="300px"/>
+    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub2.png" width="400px" height="300px"/>
 </p>
 <br/>
 
 <p>
-    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub3.png" width="500px" height="300px"/>
-    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub4.png" width="500px" height="300px"/>
+    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub3.png" width="400px" height="300px"/>
+    <img src="https://github.com/shyam-206/moviehub/blob/34429ebca3fb48bba8652897d77d15e4cee64999/assets/moviehub4.png" width="400px" height="300px"/>
 </p>
 
 <br>
