@@ -14,6 +14,7 @@ export default function Navigation() {
     <div style={{bottom:'0px'}}>
       <Routes>
         <Route path='/' element={ <Home/> } exact/>
+        <Route path= "/:id" element={<MovieDetail />}/>
         <Route path='/movies' element={ <Movies /> } />
         <Route path='/tvSeries' element={ <TVseries/> } />
         <Route path='/search' element={ <Search/> } />
