@@ -1,6 +1,7 @@
 import React ,{useEffect,useState } from 'react'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import { unavailable } from '../config/config'
+import { Link } from 'react-router-dom'
 
 export default function Card({media_type}) {
     
@@ -14,7 +15,8 @@ export default function Card({media_type}) {
         setTimeout(() => {
             setIsLoading(false)
         },1000)    
-    },[])
+    },[])   
+
 
 
     return (
@@ -28,8 +30,11 @@ export default function Card({media_type}) {
                     </SkeletonTheme>
                 </div>
                 :
-                <div >
-                    <div className="cards"key={media_type.id} style={{textDecoration:'none' ,color:"white"}}>
+
+                //main locha
+                <Link to={`${media_type.id}`}>
+                <div>
+                    <div className="cards" key={media_type.id} style={{textDecoration:'none' ,color:"white"}}>
                         <img className="cards_img" src={media_type.poster_path ? `https://image.tmdb.org/t/p/original/${ media_type ? media_type.poster_path:"" }` : unavailable} alt="" />
                         <div className="cards_overlay">
                             <div className="card_title">{ media_type ? media_type.original_title || media_type.name :""}</div>
@@ -45,7 +50,8 @@ export default function Card({media_type}) {
                             </div>
                         </div>
                     </div>
-            </div>
+                </div>
+                </Link>
             }
         </>
     )

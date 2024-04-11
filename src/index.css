@@ -8,8 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 
-
-.nav-head{
+.nav-head {
   font-size: 25px !important;
 }
 .header {
@@ -24,29 +23,31 @@ body {
 
 .movie-type {
   margin-left: 22px;
-  padding : 30px;
+  padding: 30px;
   text-decoration: none !important;
 }
 
 /* Card */
 .cards {
   display: inline-block;
-  transition: transform .2s;
+  transition: transform 0.2s;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   margin: 0.19rem;
-  cursor:pointer;
+  cursor: pointer;
   height: 300px;
   width: 200px;
-  z-index:0;
+  z-index: 0;
   border: 1px solid rgb(99, 99, 99);
 }
 
 .cards:hover {
   transform: scale(1.2);
   z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .cards_img {
@@ -62,10 +63,10 @@ body {
   flex-direction: column;
   width: 85%;
   justify-content: flex-end;
-  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
   opacity: 0;
-  transition: opacity .2s;
-}   
+  transition: opacity 0.2s;
+}
 
 .cards_overlay:hover {
   opacity: 1;
@@ -78,7 +79,7 @@ body {
 }
 
 .card_runtime {
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-bottom: 0.25rem;
 }
 
@@ -88,7 +89,7 @@ body {
 
 .card_description {
   font-style: italic;
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-bottom: 0.25rem;
 }
 
@@ -100,8 +101,8 @@ body {
 }
 
 .list__title {
-font-size: 1.75rem;
-margin:  2.5rem;
+  font-size: 1.75rem;
+  margin: 2.5rem;
 }
 
 .list__cards1 {
@@ -114,18 +115,17 @@ margin:  2.5rem;
 
 .list__cards2 {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
 ::-webkit-scrollbar {
-  width:0;
+  width: 0;
   height: 0;
 }
 
-
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,34 +133,178 @@ margin:  2.5rem;
   margin-bottom: 0px;
 }
 
-.made{
+.made {
   margin-top: 0px;
   padding-top: 30px;
   font-size: 1.5rem;
   bottom: 0;
 }
 
-button, .buttons {
+button,
+.buttons {
   border-radius: 34px;
   font-size: 16px;
   font-weight: 600;
   border: none !important;
 }
 
-button:hover,.buttons {
+button:hover,
+.buttons {
   background-color: darkblue !important;
 }
 
-.movie__row{
+.movie__row {
   padding-bottom: 25px;
 }
-@media (max-width : 1000px) {
-  .header{
+@media (max-width: 1000px) {
+  .header {
     display: inline;
   }
 
-  .movie__genres{
+  .movie__genres {
     display: inline-flex;
   }
 }
 
+.movie {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie__intro {
+  width: 80%;
+}
+
+.movie__backdrop {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0 35%;
+}
+
+.movie__detail {
+  align-items: center;
+  width: 75%;
+  display: flex;
+  position: relative;
+  bottom: 225px;
+}
+
+.movie__detailLeft {
+  margin-right: 30px;
+}
+
+.movie__poster {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.movie__detailRightTop > div {
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: 0.5rem;
+}
+
+.movie__name {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.movie__voteCount {
+  margin-left: 1rem;
+}
+
+.movie__genres {
+  margin: 1.25rem 0;
+}
+
+.movie__genre {
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+.movie__detailRightBottom {
+  margin: 2rem 0;
+  flex: 0.8;
+}
+
+.synopsisText {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.synopsisText > div:last-of-type {
+  margin-left: auto;
+}
+
+.movie__links {
+  position: relative;
+  bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.movie__heading {
+  font-size: 2.2rem;
+}
+
+.movie__Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  color: black;
+  font-weight: bold;
+}
+
+.movie__homeButton {
+  background-color: rgb(255, 0, 0);
+}
+
+.movie__imdbButton {
+  background-color: #f3ce13;
+}
+
+.newTab {
+  margin-left: 1.4rem;
+}
+
+.movie__production {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.movie__productionComapany {
+  width: 200px;
+  margin: 2rem;
+}
+
+.productionCompanyImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
