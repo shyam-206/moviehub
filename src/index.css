@@ -168,6 +168,7 @@ button:hover,
 
 .movie {
   width: 100%;
+  top: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -190,7 +191,7 @@ button:hover,
   width: 75%;
   display: flex;
   position: relative;
-  bottom: 225px;
+  bottom: 270px;
 }
 
 .movie__detailLeft {

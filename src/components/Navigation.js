@@ -20,6 +20,7 @@ export default function Navigation() {
         <Route path='/search' element={ <Search/> } />
         <Route path='/movies/:id' element={<MovieDetail/>} />
         <Route path='/tvSeries/:id' element={<TvSeriesDetail/>} />
+        <Route path='/search/:id' element={<MovieDetail/>}/>
       </Routes>
     </div>
   )
