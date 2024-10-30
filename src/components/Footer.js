@@ -9,7 +9,7 @@ export default function Footer() {
                 Jump to Top
             </div>
             <div className='made'>
-                <p>© 2023 Copyright : Shyam Dhokiya </p>
+                <p>© 2024 Copyright : Shyam Dhokiya </p>
             </div>
         </div>
         
